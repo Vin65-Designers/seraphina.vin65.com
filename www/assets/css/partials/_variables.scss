@@ -1,0 +1,100 @@
+// Global Fonts
+$montserrat: 'Montserrat', sans-serif;
+$cardo: 'Cardo', serif;
+
+// Global Variables
+$fontFamily: $cardo;
+$headingFontFamily: $montserrat;
+$buttonFont: $montserrat;
+
+// Colors
+$grey: #696969;
+$lightGrey: #eee;
+$darkGrey: #333;
+$black: #000;
+$white: #fff;
+$offWhite: #f3f4f4;
+$offBlack: #111;
+
+$green: #8AB875;
+$yellow: #e1b94a;
+$blue: #2C6680;
+
+
+// =================================== // 
+// Themes //
+// =================================== //
+
+
+@import 'themes/themeSettings_white';
+// @import 'themes/themeSettings_beige';
+// @import 'themes/themeSettings_dark';
+
+
+
+
+// ============================== // 
+// Global Variables //
+// ============================== // 
+
+@mixin gradient($color1, $color2){
+	background-color: $color1;
+	background-image: -webkit-linear-gradient(top, $color1, $color2);
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -ms-linear-gradient(top, $color1, $color2);
+	background-image: -o-linear-gradient(top, $color1, $color2);
+	background-image: linear-gradient(top, $color1, $color2);
+}
+
+@mixin boxSizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.hideText{
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	
+	a{
+		display:block;
+		height:100%;
+	}
+}
+
+$linkColor: darken($primaryColor, 10%);
+
+// Buttons
+$mainButtonColor: $primaryColor;
+$mainButtonHover: darken($mainButtonColor, 10%);
+
+$altButtonColor: $lightGrey;
+$altButtonHover: darken($lightGrey, 10%);
+
+
+// Form Colors
+$quanityForm: $lightGrey; // Add to cart quanity input form field background color.
+$quanityFormFont: $black; // Add to cart quanity input form field font color.
+
+// Back to Top Colors
+$backToTop: $darkGrey; // Back to top button color
+$backToTopFont: $white; // Back to top button font color
+
+
+// Button Colors
+// @mixin mainButtonColor() {
+// 	@include gradient($blue-light, $blue-dark); // Main Button Color
+// } 
+
+// @mixin mainButtonHover() {
+// 	@include gradient(lighten($blue-light, 5%), lighten($blue-dark, 5%));
+// } 
+
+// @mixin altButtonColor() {
+// 	@include gradient($lightGrey, $darkGrey); // Main Button Color
+// } 
+
+// @mixin altButtonHover() {
+// 	@include gradient(lighten($lightGrey, 5%), lighten($darkGrey, 5%));
+// } 

@@ -1,0 +1,414 @@
+#v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo, 
+#v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo, 
+#v65-fieldset-paymentMethod, #v65-fieldset-sourceCode, 
+#v65-fieldset-usernamePassword{
+	@media screen and (max-width: 725px){
+		width: 98%;
+	}
+}
+
+.v65-productGroup-teaser{
+	width: 100%;
+}
+
+.v65-productGroup-product{
+	&:first-child{
+		margin-left: 0;
+	}
+}
+
+.v65-productGroup{
+	.v65-clear{
+		@media screen and (max-width: 750px){
+			display: none;
+		}
+
+		&.productGroup-2Up-rowClear{
+			display: none;
+
+			@media screen and (min-width:581px) and (max-width: 599px){
+				display: block;
+			}
+		}
+
+		&.productGroup-3Up-rowClear{
+			display: none;
+
+			@media screen and (min-width: 600px) and (max-width: 750px){
+				display: block;
+			}
+		}
+	}
+}
+
+.print{
+	@media screen and (max-width: 720px){
+		margin: 0 10px;
+	}
+}
+
+.v65-product1Up .v65-product-photo {
+
+	@media screen and (max-width: 580px) {
+		margin-right: 4%;
+		width: 21%;
+	}
+	
+}
+
+.v65-product2Up .v65-product-photo {
+	margin: 0 15px;
+}
+
+.v65-product1UpStore .v65-product-photo {
+
+	@media screen and (max-width: 580px) {
+		margin-right: 3%;
+		width: 16%;
+	}
+
+}
+
+.v65-product1UpStore .v65-product-infoWrapper,
+.v65-product1UpStore .v65-product-commerceWrapper {
+
+	@media screen and (max-width: 580px) {
+		width: 81%;
+	}
+}
+
+#v65-checkoutFooter {
+	padding: 0.5em 0;
+}
+
+// ========================== // 
+// Product Lists //
+// ========================== // 
+
+.v65-paging {
+	border: 0;
+}
+
+.v65-product-addToCart-price {
+	font-weight: 100;
+}
+
+.v65-product-addToCart-unitDescription {
+	bottom: 0;
+	font-size: 1em;
+}
+
+.v65-product1Up {
+	.v65-product-title.v65-title {
+		margin: 0 0 1em;
+	}
+}
+
+.v65-product2Up {
+	.v65-product-addToCart-priceWrapper {
+		display: block;
+	}
+
+	.v65-product-addToCart form {
+		margin: 1em 0;
+	}
+
+	.v65-product-addToCart-priceWrapper {
+		margin-bottom: 0.5em;
+	}
+}
+
+.v65-product3Up {
+	@media screen and (min-width: 580px) and (max-width: 600px) {
+		margin: 0 3%;
+		width: 94%;
+	}
+}
+
+.v65-productList {
+	table {
+		th {
+			background-color: transparent;
+			color: $fontColor;
+			font-weight: normal;
+		}
+
+		tr, tr.alternatRow {
+			&:hover, &:focus, &:active {
+				background-color: $altBackgroundColor;
+			}
+		}
+
+		tr.alternatRow {
+			background-color: lighten($altBackgroundColor, 3%);
+		}
+	}
+}
+
+.v65-product1UpStore {
+	border-color: $borderColor;
+	
+	.v65-product-title.v65-title {
+		margin-top: 0;
+	}
+}
+
+.v65-product-addToCart-priceWrapper {
+	color: $headingFontColor;
+}
+
+
+// ========================== // 
+// Product Drilldown //
+// ========================== // 
+
+.v65-productWrapper {
+	@media screen and (max-width: 580px) {
+		padding: 1.5em 0;
+	}
+}
+
+.v65-productWrapper h1 {
+	margin: 0 0 1em;
+}
+
+.v65-product-reviewStats strong {
+	font-weight: normal;
+}
+
+.v65-product-attributeLabel {
+	font:{
+		size: 1.1em;
+		weight: normal;
+	}
+	margin-bottom: 0.5em;
+}
+
+.wineIntro,
+.wineDetails {
+	width: 100%;
+}
+
+.wineIntro {
+	max-width: 800px;
+	margin:2em auto 0;
+}
+
+.wineDetails {
+	border-bottom: 1px solid $borderColor;
+	border-top: 1px solid $borderColor;
+	margin: 4em 0;
+	padding: 3em 0 1em;
+
+	@media screen and (max-width: 767px) {
+		margin: 2em 0 4em;
+	}
+}
+
+.wineSpecs {
+	float: left;
+	margin: 1em 2%;
+	width: 96%;
+
+	@media screen and (min-width: 768px) {
+		margin: 0 2%;
+		width: 30%;
+	}
+
+	.v65-wine-specs {
+		.v65-product-attributeLabel {
+			font-weight: normal;
+			text-align: left;
+			width: auto;
+		}
+
+		.v65-product-attributeValue {
+			width: auto;
+		}
+	}
+}
+
+.wineProfile {
+	float: left;
+	margin: 1em 2%;
+	width: 96%;
+
+	@media screen and (min-width: 768px) {
+		margin: 0 2%;
+		width: 62%;
+	}
+}
+
+.v65-product-reviews,
+.v65-ProductRating {
+	margin: 0 2%;
+	width: 96%;
+}
+
+// ========================== // 
+// Reviews //
+// ========================== // 
+
+.v65-product-reviews {
+	@media screen and (min-width: 1191px) {
+		float: right;
+		width: 62%;
+	}
+}
+
+.v65-ProductRating {
+	@media screen and (min-width: 1191px) {
+		float: left; 
+		width: 26%;
+	}
+}
+
+.v65-product-review-wrapper {
+	border-color: $borderColor;
+}
+
+// ========================== // 
+// Clubs //
+// ========================== // 
+
+.v65-club {
+	margin: 3em 0;
+
+	@media screen and (min-width: 1020px){
+		float: left;
+		margin: 3em 2%;
+		width: 46%;
+	}
+
+	.v65-title {
+		margin-bottom: 1em;
+	}
+
+	.v65-clubTeaser {
+		border-bottom: 0;
+		padding: 0;
+	}
+
+	.v65-clubJoin {
+		padding-top: 1em;
+	}
+}
+
+#v65-signUpClubSummaryWrapper {
+	float: right;
+	position: static;
+	margin-top: 15px;
+}
+
+// ========================== // 
+// Cart //
+// ========================== // 
+
+.v65-cartCheckOutButtons {
+	padding: 0.5em 0;
+}
+
+#v65-modalCartTable {
+	th, td {
+		background-color: transparent;
+		border-color: $borderColor;
+		font-weight: 100;
+	}
+
+	strong {
+		font-weight: 100;
+	}
+}
+
+#v65-cartCheckOutCoupons {
+	fieldset {
+		border: 0;
+	}
+
+	input#v65-CouponCode {
+		@media screen and (min-width: 581px) {
+			height: 2em;
+			line-height: 2em;
+		}
+	}
+}
+
+#v65-cartTable  {
+	th, td {
+		background-color: transparent;
+		border-color: $borderColor;
+		font-weight: normal;
+
+		@media screen and (max-width: 370px) {
+			padding: 5px 2px;
+		}
+	}
+
+	.alert {
+		background-color: #c53939;
+		padding: 7px 10px;
+	}
+
+	span.v65-cartItemDescription-sku {
+
+		@media screen and (max-width: 360px) {
+			word-break: break-all;
+		}
+	}
+
+	button.modalBtn {
+		@media screen and (max-width: 400px) {
+			font-size: 12px;
+		}
+
+		span {
+			padding: 0 5px;
+		}
+	}
+}
+
+#v65-checkoutCartSummaryMini td,
+#v65-checkCartSummaryMoreOptions p,
+#v65-checkoutCartSummaryWrapper p {
+	font-size: 13px;
+}
+
+#v65-checkoutCartSummaryWrapper {
+	button.modalBtn {
+		font-size: 13px;
+	}
+}
+
+#v65-signUpClubSummaryWrapper,
+#v65-checkoutCartSummaryWrapper {
+	background-color: $modalCartColor;
+	border-color: $borderColor;
+}
+
+.v65-form fieldset {
+	border-color: $borderColor;
+}
+
+#v65-modalCartDropdown,
+#v65-modalCartBody {
+	background-color: $modalCartColor;
+	border-color: $borderColor;
+	color: $fontColor;
+
+	a {
+		color: $fontColor;
+	}
+
+	#v65-modalCartTable td a,
+	.v65-additionalItemsMessage a {
+		color: $fontColor;
+
+		&:hover, &:focus, &:active {
+			color: darken($fontColor, 8%);
+		}
+	}
+}
+
+#v65-cartCheckOutCoupons form {
+	width: 280px;
+}

@@ -1,0 +1,45 @@
+// ============================== // 
+// White Theme //
+// ============================== // 
+
+// General
+$backgroundColor: $white;
+$altBackgroundColor: #EFEFEF; 
+$borderColor: $lightGrey; 
+$fontColor: #888888;
+$primaryColor: $green;
+
+$contentBlockTitleColor: $darkGrey;
+
+// Navigation Colors
+$navLinkColor: #808080; //Font Color for main navigation
+$navLinkHover: $offBlack; //Font Hover for main navigation
+
+$navSelected: $offBlack;
+$leftNavSelected: $offBlack;
+
+$subNavLinkColor: $grey; //Font Color for sub navigation
+$subNavLinkHover: $black; //Font Color for sub navigation hover
+
+$subNavBackgroundColor: $backgroundColor;
+
+$userToolsLinkColor: $navLinkColor; 
+
+$headingFontColor: $darkGrey;
+$headerFontColor: $darkGrey;
+
+// Footer Colors
+$footerColor: #838383;
+$footerLink: #838383;
+$footerLinkHover: darken(#838383, 15%);
+$legalFooterColor: lighten($footerLink, 13%);
+
+$productTitleColor: $headingFontColor;
+
+$calendarDayColor: #f4f4f4;
+
+$modalCartColor: #F9F9F9;
+
+// Logo Settings
+$logo: 'logo.png';
+$logo-retina: 'logo@2x.png';

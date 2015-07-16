@@ -1,0 +1,41 @@
+#v65-modalContentHeader{
+	background: $headingFontColor;
+}
+
+
+	.pageContent{
+		@media screen and (max-width: 800px){
+			padding: 2em 1em 2em;
+		}
+		
+		@media screen and (min-width: 801px){
+			padding: 3em;
+		}
+	}
+
+.wrapper {
+	padding: 0 3%;
+	margin: 0 auto;
+	max-width: 1300px;
+	width: 94%;
+}
+
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea {
+	background: #f8f8f8;
+	border-color: #e4e4e4;
+	border-radius: 3px;
+
+  	@media screen and (min-width: 581px) {
+  		height: 2.9em;
+  		line-height: 2.9em;
+  	}
+}
+
+/* ----- a. Homepage Styles ----- */
+@import 'content_home';
+
+/* ----- b. Page Styles ----- */
+@import 'content_page';
+
+/* ----- c. Store Styles ----- */
+@import 'content_store';

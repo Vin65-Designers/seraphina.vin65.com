@@ -1,0 +1,84 @@
+header.primary{
+	margin-bottom: 1em;
+	position: relative;
+	width: 100%;
+	z-index: 10;
+
+	@media screen and (min-width: 581px) {
+		border-bottom: 1px solid $borderColor;
+	}
+}
+.userToolsWrapper {
+	@media screen and (min-width: 581px) {
+		border-bottom: 1px solid $borderColor;
+	}
+
+	.wrapper {
+		@media screen and (max-width: 580px) {
+			padding: 0;
+			width: 100%;
+		}
+	}
+}
+	#v65-modalCart {
+		@media screen and (min-width: 581px) {
+			border-left: 1px solid $borderColor;
+	  		padding-left: 20px;
+		}
+	}
+
+	#user-tools {
+		font-size: 15px;
+		
+		@media screen and (min-width: 581px) {
+			width: 420px;
+		}
+
+		@media screen and (max-width: 580px){
+			border-bottom: 1px solid $borderColor;
+		}
+
+		.v65-yourAccount, .v65-editProfile,
+		.v65-login, .v65-logout {
+			border-color: $borderColor;
+			font-size: 15px;
+
+			@media screen and (min-width: 581px) {
+				border: 0;
+			}
+		}
+
+		.v65-editProfile, .v65-yourAccount {
+			@media screen and (max-width: 580px) {
+				width: 32%;
+			}
+		}
+
+		.v65-login, .v65-logout {
+			@media screen and (max-width: 580px) {
+				width: 20%;
+			}
+		}
+
+		a {
+			color: $userToolsLinkColor;
+		}
+	}
+
+	.logo{
+		background:{
+			image: image-url($logo);
+			position: top center;
+			repeat: no-repeat;
+		}
+		background-size: contain;
+		display: block;
+		height: 140px;
+		margin: 0.5em auto;
+		position: relative;
+		width: 260px;
+
+		@media screen and (-webkit-min-device-pixel-ratio: 1.5),	(min-device-pixel-ratio: 1.5){
+			background-image: image-url($logo-retina);
+		}
+	}
