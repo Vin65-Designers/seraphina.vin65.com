@@ -120,22 +120,21 @@ a[name=footerNav] {
 }
 
 /* Standard V65 Styles - don't remove */
-
 /* New Global Column Templates */
-.v65-colWrapper { border: 1px dotted #666; margin-bottom: 2em; width: 100%; }
+.v65-colWrapper { border: 1px dotted #BDBDBD; margin-bottom: 2em; width: 100%; padding: 7px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 .v65-colWrapper:before,.v65-colWrapper:after { content:""; display:table; }
 .v65-colWrapper:after { clear:both; }
 
-.v65-col2 { border: 1px dotted #ccc; float: left; margin-left: 6%; width: 47%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col2 { border: 2px dotted #909090; padding: 5px; float: left; margin-left: 6%; width: 47%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .v65-col2:first-child { float: left; margin-left: 0%; width: 47%; }
-.v65-col2Right { border: 1px dotted #ccc; float: left; margin-left: 6%; width: 29%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col2Right { border: 2px dotted #909090; padding: 5px; float: left; margin-left: 6%; width: 29%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .v65-col2Right:first-child { float: left; margin-left: 0; width: 65%; }
-.v65-col2Left { border: 1px dotted #ccc; float: left; margin-right: 0; width: 65%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col2Left { border: 2px dotted #909090; padding: 5px; float: left; margin-right: 0; width: 65%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .v65-col2Left:first-child { float: left; margin-right: 6%; width: 29%; }
-.v65-col3 { border: 1px dotted #ccc; float: left; margin-left: 5%; width: 30%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col3 { border: 2px dotted #909090; padding: 5px; float: left; margin-left: 5%; width: 30%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .v65-col3:first-child { float: left; margin-left: 0%; width: 30%; }
-.v65-col4 { border: 1px dotted #ccc; float: left; margin-left: 3%; width: 22.7%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.v65-col4:first-child { border: 1px dotted #ccc; margin-left: 0; }
+.v65-col4 { border: 2px dotted #909090; padding: 5px; float: left; margin-left: 3%; width: 22.7%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col4:first-child { border: 2px dotted #909090; margin-left: 0; }
 .v65-col2 img, .v65-col2Right img, .v65-col2Left img, .v65-col4 img, .v65-col3 img { max-width: 100% !important; height: auto !important; }
 
 /* Images */
