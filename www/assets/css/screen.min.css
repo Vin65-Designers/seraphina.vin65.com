@@ -807,20 +807,21 @@ header.primary {
   }
 }
 
+#v65-modalCart {
+  position: static;
+}
 @media screen and (min-width: 581px) {
   #v65-modalCart {
     border-left: 1px solid #eeeeee;
+    display: inline-block;
+    margin-left: 15px;
     padding-left: 20px;
   }
 }
 
 #user-tools {
   font-size: 15px;
-}
-@media screen and (min-width: 581px) {
-  #user-tools {
-    width: 420px;
-  }
+  width: auto;
 }
 @media screen and (max-width: 580px) {
   #user-tools {
@@ -831,6 +832,7 @@ header.primary {
 #user-tools .v65-login, #user-tools .v65-logout {
   border-color: #eeeeee;
   font-size: 15px;
+  width: auto;
 }
 @media screen and (min-width: 581px) {
   #user-tools .v65-yourAccount, #user-tools .v65-editProfile,
@@ -850,6 +852,15 @@ header.primary {
 }
 #user-tools a {
   color: gray;
+}
+#user-tools .v65-pointsBalance {
+  display: inline-block;
+  padding: 0 1em;
+}
+@media screen and (max-width: 580px) {
+  #user-tools .v65-pointsBalance {
+    display: none;
+  }
 }
 
 .logo {

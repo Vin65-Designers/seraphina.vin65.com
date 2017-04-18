@@ -21,18 +21,19 @@ header.primary{
 	}
 }
 	#v65-modalCart {
+		position: static;
+
 		@media screen and (min-width: 581px) {
 			border-left: 1px solid $borderColor;
+	  		display:inline-block;
+	  		margin-left: 15px;
 	  		padding-left: 20px;
 		}
 	}
 
 	#user-tools {
 		font-size: 15px;
-		
-		@media screen and (min-width: 581px) {
-			width: 420px;
-		}
+		width: auto;
 
 		@media screen and (max-width: 580px){
 			border-bottom: 1px solid $borderColor;
@@ -42,6 +43,7 @@ header.primary{
 		.v65-login, .v65-logout {
 			border-color: $borderColor;
 			font-size: 15px;
+			width: auto;
 
 			@media screen and (min-width: 581px) {
 				border: 0;
@@ -62,6 +64,15 @@ header.primary{
 
 		a {
 			color: $userToolsLinkColor;
+		}
+
+		.v65-pointsBalance {
+			display: inline-block;
+			padding: 0 1em;
+
+			@media screen and (max-width: 580px){
+				display: none;
+			}
 		}
 	}
 
