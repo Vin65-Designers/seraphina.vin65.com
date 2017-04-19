@@ -1171,15 +1171,27 @@ header.primary {
   width: 94%;
 }
 
-input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea {
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
   background: #f8f8f8;
   border-color: #e4e4e4;
   border-radius: 3px;
 }
 @media screen and (min-width: 581px) {
-  input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea {
+  input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
     height: 2.9em;
     line-height: 2.9em;
+  }
+}
+
+input[type='number'] {
+  border: 1px solid #e4e4e4;
+  padding: 0 0.5em;
+}
+@media screen and (max-width: 580px) {
+  input[type='number'] {
+    height: 4em;
+    line-height: 4em;
+    min-width: 3em;
   }
 }
 
@@ -1869,8 +1881,15 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
 
 #v65-checkoutCartSummaryMini td,
 #v65-checkCartSummaryMoreOptions p,
-#v65-checkoutCartSummaryWrapper p {
+#v65-checkoutCartSummaryWrapper p,
+#v65-loyaltyPointsFormWrapper div {
   font-size: 13px;
+}
+
+#v65-checkoutCartSummaryMini,
+#v65-checkCartSummaryMoreOptions {
+  float: none;
+  width: 100%;
 }
 
 #v65-checkoutCartSummaryWrapper button.modalBtn {
@@ -1918,6 +1937,17 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
 
 #v65-cartCheckOutCoupons form {
   width: 280px;
+}
+
+#v65-pointsGainedOnOrder {
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  font-size: 1em;
+  padding: 0.5em 0;
+  margin: 0.5em 0 1em;
+}
+#v65-pointsGainedOnOrder p {
+  margin: 0;
 }
 
 /*   ===================================================================================================

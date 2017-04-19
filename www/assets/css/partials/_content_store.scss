@@ -369,8 +369,15 @@
 
 #v65-checkoutCartSummaryMini td,
 #v65-checkCartSummaryMoreOptions p,
-#v65-checkoutCartSummaryWrapper p {
+#v65-checkoutCartSummaryWrapper p,
+#v65-loyaltyPointsFormWrapper div {
 	font-size: 13px;
+}
+
+#v65-checkoutCartSummaryMini,
+#v65-checkCartSummaryMoreOptions {
+	float: none;
+	width: 100%;
 }
 
 #v65-checkoutCartSummaryWrapper {
@@ -411,4 +418,16 @@
 
 #v65-cartCheckOutCoupons form {
 	width: 280px;
+}
+
+#v65-pointsGainedOnOrder {
+	border-bottom: 1px solid $borderColor;
+	border-top: 1px solid $borderColor;
+	font-size: 1em;
+	padding: 0.5em 0;
+	margin: 0.5em 0 1em;
+
+	p {
+		margin: 0;
+	}
 }
