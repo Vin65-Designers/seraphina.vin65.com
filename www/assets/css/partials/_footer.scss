@@ -94,20 +94,7 @@ footer{
 		margin-top: 2em;
 		width: 100%;
 	}
-
-	.socialIcons {
-		li {
-			border-top: 0;
-			display: inline-block;
-			font-size: 1.7em;
-			padding: 0 0.2em;
-
-			@media screen and (max-width: 580px) {
-				padding: 0 0.3em;
-			}
-		}
-	}
-
+	
 	.legal{
 		color: $legalFooterColor;
 		font-size: 0.917em;

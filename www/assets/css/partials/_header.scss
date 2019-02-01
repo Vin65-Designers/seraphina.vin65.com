@@ -76,20 +76,6 @@ header.primary{
 		}
 	}
 
-	.logo{
-		background:{
-			image: image-url($logo);
-			position: top center;
-			repeat: no-repeat;
-		}
-		background-size: contain;
-		display: block;
-		height: 140px;
-		margin: 0.5em auto;
-		position: relative;
-		width: 260px;
-
-		@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi){ 
-			background-image: image-url($logo-retina);
-		}
+	.v65-logo{
+		margin: 0.5em auto !important;
 	}
