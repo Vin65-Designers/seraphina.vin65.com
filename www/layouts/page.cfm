@@ -38,9 +38,7 @@
 			</div>
 		</div>
 
-		<h1 class="logo hideText">
-			<a href="/" accesskey="h"><cf_websiteName></a>
-		</h1>
+		<cf_logo>
 		
 		<nav class="mainMenu">
 			<cf_layoutHeaderNav depth="2">
@@ -79,7 +77,7 @@
 
 				<div class="footerSection">
 					<cf_pods location="Footer Social Title" type="title">
-					<cf_customFile file="/v65html/_social.html">
+					<cf_socialMediaLinks>
 				</div>
 
 				<div class="newsletterFooterSection">
@@ -91,6 +89,7 @@
 
 		<div class="footerTools"> 	
 			<ul class="legal">
+				<li><cf_footerInfo></li>
 				<li><cf_copyright></li>
 				<li><cf_vin65Accolade></li>
 			</ul>
