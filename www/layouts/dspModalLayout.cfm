@@ -1,4 +1,4 @@
-﻿<Cfoutput>
+﻿<cfoutput>
 <div id="v65-modalContainer">
 	
 	<div id="v65-modalViel">&nbsp;</div>
@@ -14,4 +14,4 @@
 	</div>
 
 </div>
-</Cfoutput>
+</cfoutput>

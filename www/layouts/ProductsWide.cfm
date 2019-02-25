@@ -1,5 +1,6 @@
-<cfoutput> <!DOCTYPE html>
-<html>
+<cfoutput> 
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
 
 	<meta charset="utf-8">
@@ -61,4 +62,5 @@
 <cf_vin65GlobalFooterAssets>
 
 </body>
-</html> </cfoutput>
+</html>
+ </cfoutput>

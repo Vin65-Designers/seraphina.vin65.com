@@ -1,5 +1,6 @@
-<cfoutput> <!DOCTYPE html>
-<html>
+<cfoutput> 
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
 
 	<meta charset="utf-8">
@@ -45,30 +46,32 @@
 		</nav>
 	</header>
 	
-	<section class="content pageContent v65-group">
-		<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
-		<div class="wrapper v65-group">	
+	<main>
+		<section class="content pageContent v65-group">
+			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
+			<div class="wrapper v65-group">	
 
-			<div class="blogContent">
-				<cf_mainContent>
-			</div><!--/blogContent-->
-			
-			<aside class="blogFilterWrapper">
-				<a name="footerMenu"></a>
+				<div class="blogContent">
+					<cf_mainContent>
+				</div><!--/blogContent-->
 				
-				<div class="blogFilter blogFilterLeft">
-					<h5>Recent Posts</h5>
-					<cf_blogRecentPosts maxrows="10">
+				<aside class="blogFilterWrapper">
+					<a name="footerMenu"></a>
+					
+					<div class="blogFilter blogFilterLeft">
+						<h5>Recent Posts</h5>
+						<cf_blogRecentPosts maxrows="10">
 
-					<h5>Blog Categories</h5>
-					<cf_blogCategories>
+						<h5>Blog Categories</h5>
+						<cf_blogCategories>
 
-					<h5>Blog Archives</h5>
-					<cf_blogArchives>
-				</div>
-			</aside><!--/blogRightWrapper-->
-		</div>
-	</section><!--/content-->
+						<h5>Blog Archives</h5>
+						<cf_blogArchives>
+					</div>
+				</aside><!--/blogRightWrapper-->
+			</div>
+		</section><!--/content-->
+	</main>
 
 	<footer>
 		<a name="footerMenu"></a>
@@ -111,4 +114,5 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html> </cfoutput>
+</html>
+ </cfoutput>

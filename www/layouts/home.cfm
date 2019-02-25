@@ -1,5 +1,6 @@
-<cfoutput> <!DOCTYPE html>
-<html>
+<cfoutput> 
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
 
 	<meta charset="utf-8">
@@ -43,20 +44,23 @@
 			<cf_layoutHeaderNav depth="2">
 		</nav>
 	</header>
-
-	<section class="content homepageContent v65-group">
-		<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
-		<div class="wrapper v65-group">	
-			<div class="homepageContentBlocks v65-group">
-				<cf_contentBlock group="Homepage Block">
-			</div>	
-			
-			<div class="homepageProductGroup v65-group">
-				<cf_product_group code="HomepageProductGroup">
+	
+	<main>
+		<section class="content homepageContent v65-group">
+			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
+			<div class="wrapper v65-group">
+				<h1 class="hideText"><cf_websiteName></h1>
+				<div class="homepageContentBlocks v65-group">
+					<cf_contentBlock group="Homepage Block">
+				</div>	
+				
+				<div class="homepageProductGroup v65-group">
+					<cf_product_group code="HomepageProductGroup">
+				</div>
 			</div>
-		</div>
-	</section><!--/homepageContent-->
-
+		</section><!--/homepageContent-->
+	</main>
+	
 	<footer>
 		<a name="footerMenu"></a>
 		<div class="footerSections">
@@ -98,4 +102,5 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html> </cfoutput>
+</html>
+ </cfoutput>

@@ -1,5 +1,6 @@
-<cfoutput> <!DOCTYPE html>
-<html>
+<cfoutput> 
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
 
 	<meta charset="utf-8">
@@ -45,21 +46,22 @@
 		</nav>
 	</header>
 	
-	<section class="content pageContent v65-group">
-		<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
-		<div class="wrapper v65-group">	
+	<main>
+		<section class="content pageContent v65-group">
+			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
+			<div class="wrapper v65-group">	
 
-			<article class="page">
-				<cf_mainContent>
-			</article>
-			
-			<aside class="subMenu">
-				<a name="footerMenu"></a>
-				<cf_layoutLeftNav>
-			</aside>
-		</div>
-	</section><!--/pageContent-->
-	
+				<article class="page">
+					<cf_mainContent>
+				</article>
+				
+				<aside class="subMenu">
+					<a name="footerMenu"></a>
+					<cf_layoutLeftNav>
+				</aside>
+			</div>
+		</section><!--/pageContent-->
+	</main>
 	<footer>
 		<a name="footerMenu"></a>
 		<div class="footerSections">
@@ -101,4 +103,5 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html> </cfoutput>
+</html>
+ </cfoutput>
