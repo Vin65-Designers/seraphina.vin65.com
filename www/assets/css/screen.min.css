@@ -101,13 +101,6 @@ a {
 }
 
 /**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-a:focus {
-  outline: thin dotted;
-}
-
-/**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 a:active,
@@ -658,9 +651,20 @@ html {
 
 body {
   background-color: #fff;
-  color: #888888;
+  color: #737373;
   font-family: "Cardo", serif;
   font-weight: 300;
+}
+
+/* ==========================================================================
+   Focus styles for accessibility
+   ========================================================================== */
+*:focus {
+  outline: 3px solid orange;
+}
+
+*.focus--mouse:focus {
+  outline: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -746,7 +750,7 @@ dd, dt, li {
 }
 
 a {
-  color: #6ea555;
+  color: #548240;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
@@ -1182,12 +1186,7 @@ input[type='number'] {
 
 /* ----- a. Homepage Styles ----- */
 .homepageContentBlocks {
-  margin: 4em 0 8em;
-}
-@media screen and (max-width: 580px) {
-  .homepageContentBlocks {
-    margin-top: 1em;
-  }
+  margin: 2em 0 8em;
 }
 
 .homepageContentBlock {
@@ -1297,7 +1296,7 @@ input[type='number'] {
   text-transform: uppercase;
 }
 .homepageContentBlock a.homepageButton:hover, .homepageContentBlock a.homepageButton:active, .homepageContentBlock a.homepageButton:focus {
-  background-color: #6ea555;
+  background-color: #548240;
 }
 
 .homepageProductGroup .v65-productGroup-title.v65-title,
@@ -1527,7 +1526,7 @@ input[type='number'] {
 @media screen and (max-width: 580px) {
   #v65-CalendarTable .v65-CalendarEvent a {
     background-color: transparent;
-    color: #6ea555;
+    color: #548240;
     height: 2.3em;
     width: auto;
   }
@@ -2060,7 +2059,7 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   line-height: inherit;
 }
 button.defaultBtn:hover, button.defaultBtn:active, button.modalBtn:hover, button.modalBtn:active, button.largeBtn:hover, button.largeBtn:active {
-  background: #6ea555;
+  background: #548240;
 }
 button.modalBtn, button.altModalBtn {
   height: 2.5em;
@@ -2106,7 +2105,7 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   line-height: inherit;
 }
 a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active {
-  background: #6ea555;
+  background: #548240;
 }
 @media screen and (max-width: 580px) {
   a.linkBtn {
@@ -2149,7 +2148,7 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
      7. Footer
 ======================================================================================================== */
 footer {
-  color: #838383;
+  color: #737373;
   font-size: 0.9em;
   padding: 5em 0 1.5em;
   width: 100%;
@@ -2179,7 +2178,7 @@ footer li {
   }
 }
 footer li a {
-  color: #838383;
+  color: #737373;
   position: relative;
 }
 @media screen and (max-width: 580px) {
@@ -2258,5 +2257,5 @@ footer .legal a {
   color: #a4a4a4;
 }
 footer a {
-  color: #838383;
+  color: #737373;
 }

@@ -8,10 +8,20 @@ body{
 	font-family: $fontFamily;
 	font-weight: 300;
 }
+/* ==========================================================================
+   Focus styles for accessibility
+   ========================================================================== */
+*:focus {
+	outline: 3px solid orange;
+}
+
+*.focus--mouse:focus {
+	outline: 0;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	color: $headingFontColor;
-	font:{
+	font: {
 		family: $headingFontFamily;
 		weight: 300;
 	}
@@ -56,7 +66,7 @@ h6 {
 
 .v65-title { 
 	color: $headingFontColor;
-	font:{
+	font: {
 		family: $headingFontFamily;
 		size: 1.5em;
 		weight: 300;
@@ -75,7 +85,7 @@ h6 {
 
 .v65-subtitle {
 	color: $headingFontColor;
-	font:{
+	font: {
 		size: 1.1em;
 		family: $headingFontFamily;
 		weight: 300;

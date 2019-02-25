@@ -196,11 +196,12 @@
 					var location = '/assets/images/photogallery/images/large/',
 						photo = $(this).attr('src'),
 						caption = $(this).attr('caption'),
+						alt = $(this).attr('src'),
 						url = $(this).attr('link');
 					if (url === undefined) {
-						images += '<img src="'+location+photo+'" title="'+caption+'"/>';
+						images += '<img src="'+location+photo+'" alt="'+alt+'" title="'+caption+'"/>';
 					} else{
-						images += '<a href="'+url+'"><img src="'+location+photo+'" title="'+caption+'"/></a>';
+						images += '<a href="'+url+'"><img src="'+location+photo+'" alt="'+alt+'" title="'+caption+'"/></a>';
 					}
 				});
 				gallery.append(images);
