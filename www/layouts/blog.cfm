@@ -1,6 +1,5 @@
-<cfoutput> 
-<!DOCTYPE html>
-<html lang="en-US">
+<cfoutput> <!DOCTYPE html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -26,6 +25,7 @@
 
 	<header class="primary v65-group">
 		<div class="userToolsWrapper v65-group">
+			<cf_skipToContent targetID="mainContent">
 			<div class="wrapper">
 				<div class="mobileMenu">
 					<i class="icon-mobile"></i>
@@ -47,7 +47,7 @@
 	</header>
 	
 	<main>
-		<section class="content pageContent v65-group">
+		<section class="content pageContent v65-group" id="mainContent">
 			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
 			<div class="wrapper v65-group">	
 
@@ -59,13 +59,13 @@
 					<a name="footerMenu"></a>
 					
 					<div class="blogFilter blogFilterLeft">
-						<h5>Recent Posts</h5>
+						<h3>Recent Posts</h3>
 						<cf_blogRecentPosts maxrows="10">
 
-						<h5>Blog Categories</h5>
+						<h3>Blog Categories</h3>
 						<cf_blogCategories>
 
-						<h5>Blog Archives</h5>
+						<h3>Blog Archives</h3>
 						<cf_blogArchives>
 					</div>
 				</aside><!--/blogRightWrapper-->
@@ -114,5 +114,4 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html>
- </cfoutput>
+</html> </cfoutput>

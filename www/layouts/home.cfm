@@ -1,6 +1,5 @@
-<cfoutput> 
-<!DOCTYPE html>
-<html lang="en-US">
+<cfoutput> <!DOCTYPE html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -25,6 +24,7 @@
 
 	<header class="primary v65-group">
 		<div class="userToolsWrapper v65-group">
+			<cf_skipToContent targetID="mainContent">
 			<div class="wrapper">
 				<div class="mobileMenu">
 					<i class="icon-mobile"></i>
@@ -44,13 +44,15 @@
 			<cf_layoutHeaderNav depth="2">
 		</nav>
 	</header>
-	
+
 	<main>
-		<section class="content homepageContent v65-group">
+		<section class="content homepageContent v65-group" id="mainContent">
 			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
-			<div class="wrapper v65-group">
-				<h1 class="hideText"><cf_websiteName></h1>
+			<div class="wrapper v65-group">	
 				<div class="homepageContentBlocks v65-group">
+					<h1 class="hideText">
+						
+					</h1>
 					<cf_contentBlock group="Homepage Block">
 				</div>	
 				
@@ -102,5 +104,4 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html>
- </cfoutput>
+</html> </cfoutput>

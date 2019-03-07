@@ -1,6 +1,5 @@
-<cfoutput> 
-<!DOCTYPE html>
-<html lang="en-US">
+<cfoutput> <!DOCTYPE html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -25,6 +24,7 @@
 
 	<header class="primary v65-group">
 		<div class="userToolsWrapper v65-group">
+			<cf_skipToContent targetID="mainContent">
 			<div class="wrapper">
 				<div id="user-tools">
 					
@@ -40,7 +40,7 @@
 	</header>
 
 	<main>
-		<section class="content pageContent v65-group">
+		<section id="mainContent" class="content pageContent v65-group">
 			<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
 			<div class="wrapper v65-group">	
 				<cf_mainContent>
@@ -89,5 +89,4 @@
 	<cf_vin65GlobalFooterAssets>
 
 </body>
-</html>
- </cfoutput>
+</html> </cfoutput>

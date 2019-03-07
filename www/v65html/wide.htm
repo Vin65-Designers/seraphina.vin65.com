@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -27,6 +27,7 @@
 
 	<header class="primary v65-group">
 		<div class="userToolsWrapper v65-group">
+			<v65:skipToContent targetID="mainContent"></v65:skipToContent>
 			<div class="wrapper">
 				<div class="mobileMenu">
 					<i class="icon-mobile"></i>
@@ -46,13 +47,15 @@
 			<v65:layoutHeaderNav depth="2"></v65:layoutHeaderNav>
 		</nav>
 	</header>
-
-	<section class="content pageContent v65-group">
-		<a class="backToTop" href="#"><i class="icon-up-bold"></i></a>
-		<div class="wrapper v65-group">	
-			<v65:mainContent></v65:mainContent>
-		</div>
-	</article><!--/contentWide-->
+	
+	<main>
+		<section class="content pageContent v65-group" id="mainContent">
+			<a class="backToTop" href="#"><i class="icon-up-bold"></i></a>
+			<div class="wrapper v65-group">	
+				<v65:mainContent></v65:mainContent>
+			</div>
+		</article><!--/contentWide-->
+	</main>
 	
 	<footer>
 		<a name="footerMenu"></a>

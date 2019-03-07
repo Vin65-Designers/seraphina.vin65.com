@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -27,6 +27,7 @@
 
 	<header class="primary v65-group">
 		<div class="userToolsWrapper v65-group">
+			<v65:skipToContent targetID="mainContent"></v65:skipToContent>
 			<div class="wrapper">
 				<div class="mobileMenu">
 					<i class="icon-mobile"></i>
@@ -47,30 +48,32 @@
 		</nav>
 	</header>
 	
-	<section class="content pageContent v65-group">
-		<a class="backToTop" href="#"><i class="icon-up-bold"></i></a>
-		<div class="wrapper v65-group">	
+	<main>
+		<section class="content pageContent v65-group" id="mainContent">
+			<a class="backToTop" href="#"><i class="icon-up-bold"></i></a>
+			<div class="wrapper v65-group">	
 
-			<div class="blogContent">
-				<v65:mainContent></v65:mainContent>
-			</div><!--/blogContent-->
-			
-			<aside class="blogFilterWrapper">
-				<a name="footerMenu"></a>
+				<div class="blogContent">
+					<v65:mainContent></v65:mainContent>
+				</div><!--/blogContent-->
 				
-				<div class="blogFilter blogFilterLeft">
-					<h5>Recent Posts</h5>
-					<v65:blogRecentPosts maxrows="10"></v65:blogRecentPosts>
+				<aside class="blogFilterWrapper">
+					<a name="footerMenu"></a>
+					
+					<div class="blogFilter blogFilterLeft">
+						<h3>Recent Posts</h3>
+						<v65:blogRecentPosts maxrows="10"></v65:blogRecentPosts>
 
-					<h5>Blog Categories</h5>
-					<v65:blogCategories></v65:blogCategories>
+						<h3>Blog Categories</h3>
+						<v65:blogCategories></v65:blogCategories>
 
-					<h5>Blog Archives</h5>
-					<v65:blogArchives></v65:blogArchives>
-				</div>
-			</aside><!--/blogRightWrapper-->
-		</div>
-	</section><!--/content-->
+						<h3>Blog Archives</h3>
+						<v65:blogArchives></v65:blogArchives>
+					</div>
+				</aside><!--/blogRightWrapper-->
+			</div>
+		</section><!--/content-->
+	</main>
 
 	<footer>
 		<a name="footerMenu"></a>

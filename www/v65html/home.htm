@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -26,6 +26,7 @@
 
 	<header class="primary v65-group">
 		<div class="userToolsWrapper v65-group">
+			<v65:skipToContent targetID="mainContent"></v65:skipToContent>
 			<div class="wrapper">
 				<div class="mobileMenu">
 					<i class="icon-mobile"></i>
@@ -46,19 +47,24 @@
 		</nav>
 	</header>
 
-	<section class="content homepageContent v65-group">
-		<a class="backToTop" href="#"><i class="icon-up-bold"></i></a>
-		<div class="wrapper v65-group">	
-			<div class="homepageContentBlocks v65-group">
-				<v65:contentBlock group="Homepage Block"></v65:contentBlock>
-			</div>	
-			
-			<div class="homepageProductGroup v65-group">
-				<v65:product:group code="HomepageProductGroup"></v65:product:group>
+	<main>
+		<section class="content homepageContent v65-group" id="mainContent">
+			<a class="backToTop" href="#"><i class="icon-up-bold"></i></a>
+			<div class="wrapper v65-group">	
+				<div class="homepageContentBlocks v65-group">
+					<h1 class="hideText">
+						<cf_websiteName>
+					</h1>
+					<v65:contentBlock group="Homepage Block"></v65:contentBlock>
+				</div>	
+				
+				<div class="homepageProductGroup v65-group">
+					<v65:product:group code="HomepageProductGroup"></v65:product:group>
+				</div>
 			</div>
-		</div>
-	</section><!--/homepageContent-->
-
+		</section><!--/homepageContent-->
+	</main>
+	
 	<footer>
 		<a name="footerMenu"></a>
 		<div class="footerSections">
