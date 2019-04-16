@@ -111,15 +111,19 @@
 		initPhotoGallery : function(){
 			if($("#pagePhotoGallery").length){
 				$("#pagePhotoGallery").v65PhotoGallery({
-					galleryWidth : null, // This value is translated to 630px and will change the photogallery width
-					galleryHeight : null // This value is translated to 420px and will change the photogallery height
-					
+					galleryHeight : null, // This value is translated to the set height of the gallery and will change the photogallery height
+					galleryWidth : null, // This value is translated to the set width of the gallery and will change the photogallery width
 					/*
 						Uncomment the code below if you want to change how the photo gallery is displayed.
-						pauseTime : 5000, // Adjust how long the image is displayed for. Value is in milliseconds
-						animSpeed : 1000, // Adjust the transition speed between images. Value is in milliseconds
-						controlNav : false, // hide the 1,2,3 navigation
-						directionNav : false // hide the arrow navigation
+						arrows: true, //Show the arrow navigation
+						autoplay: false, //Does the carousel autoplay or not
+						autoplaySpeed: 3000,, // Adjust the transition speed between images. Value is in milliseconds
+						centerMode: false, //Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
+            centerPadding: '50px', //Side padding when in center mode (px or %)
+						dots: true, //Show the dot navigation for each image
+						fade: false, //Add a fade effect between image transitions
+            slidesToShow: 1, //How may slides to show at once
+						slidesToScroll: 1 //How many slides to scroll at once
 					*/
 				});
 			}
@@ -167,17 +171,9 @@
 	$.fn.v65PhotoGallery = function(options){
 		var defaults = {
 			galleryId : $("#pagePhotoGallery").attr("v65jsphotogalleryid"),
-			galleryHeight : $("#pagePhotoGallery").attr("v65jsphotogalleryheight"),
-			galleryWidth : $("#pagePhotoGallery").attr("v65jsphotogallerywidth"),
-			timestamp : "&timestamp="+ new Date().getTime(),
-			effect:'fade', // Specify sets like: 'fold,fade,sliceDown'
-			slices:15, // For slice animations
-			animSpeed:500, // Slide transition speed
-			pauseTime:5000, // How long each slide will show
-			startSlide:0, // Set starting Slide (0 index)
-			directionNav:true, // Next & Prev navigation
-			directionNavHide:true, // Only show on hover
-			controlNav:true // 1,2,3... navigation
+			galleryHeight : null,
+			galleryWidth : null,
+			timestamp : "&timestamp="+ new Date().getTime()
 		},
 		gallery = $(this),
 		settings = $.extend(defaults, options);
@@ -191,31 +187,39 @@
 			url: "/index.cfm?method=pages.showPhotoGalleryXML&photogalleryid="+settings.galleryId+defaults.timestamp,
 			dataType: "xml",
 			success: function(xml) {
-				var images = "";
+				var slides = "";
 				$(xml).find('img').each(function() {
 					var location = '/assets/images/photogallery/images/large/',
 						photo = $(this).attr('src'),
 						caption = $(this).attr('caption'),
-						alt = $(this).attr('src'),
+						title = $(this).attr('title'),
 						url = $(this).attr('link');
-					if (url === undefined) {
-						images += '<img src="'+location+photo+'" alt="'+alt+'" title="'+caption+'"/>';
-					} else{
-						images += '<a href="'+url+'"><img src="'+location+photo+'" alt="'+alt+'" title="'+caption+'"/></a>';
-					}
+						if (url === undefined) {
+						var	image = '<img alt="'+title+'" src="'+location+photo+'" title="'+caption+'"/>';
+						} else{
+						var	image = '<a href="'+url+'"><img alt="'+title+'" src="'+location+photo+'" title="'+caption+'"/></a>';
+						}
+						slides += image;
 				});
-				gallery.append(images);
+				gallery.append(slides);
 			},
 			complete: function(){
-	   			gallery.nivoSlider({
-					effect:settings.effect,
-					slices:settings.slices,
-					animSpeed:settings.animSpeed,
-					pauseTime:settings.pauseTime,
-					startSlide:settings.startSlide,
-					directionNav:settings.directionNav,
-					directionNavHide:settings.directionNavHide,
-					controlNav:settings.controlNav
+	   			gallery.slick({
+						arrows: settings.arrows, //Show the arrow navigation
+						autoplay: settings.autoplay, //Does the carousel autoplay or not
+						autoplaySpeed: settings.autoplaySpeed, // Adjust the transition speed between images. Value is in milliseconds
+						centerMode: settings.centerMode, //Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
+            centerPadding: settings.centerPadding, //Side padding when in center mode (px or %)
+						dots: settings.dots, //Show the dot navigation for each image
+						fade: settings.fade, //Add a fade effect between image transitions
+            slidesToShow: settings.slidesToShow, //How may slides to show at once
+						slidesToScroll: settings.slidesToScroll //How many slides to scroll at once
+				});
+				$('#pagePhotoGallery .slick-slide img').each(function(){ 
+					if ($(this).attr('title')){
+						var slideCaption = $(this).attr('title');
+						$(this).parent('div').addClass('has-caption').append('<div class="slidecaption">' + slideCaption + '</div>');
+					}
 				});
 	   		}
 	   	});
