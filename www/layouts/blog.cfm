@@ -109,7 +109,7 @@
 		</div><!--/footerTools-->
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
+	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/track-focus.min.js">
 
 	<cf_vin65GlobalFooterAssets>
 

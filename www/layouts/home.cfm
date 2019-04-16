@@ -51,7 +51,7 @@
 			<div class="wrapper v65-group">	
 				<div class="homepageContentBlocks v65-group">
 					<h1 class="hideText">
-						
+						<cf_websiteName>
 					</h1>
 					<cf_contentBlock group="Homepage Block">
 				</div>	
@@ -99,7 +99,7 @@
 		</div><!--/footerTools-->
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js">
+	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/track-focus.min.js">
 
 	<cf_vin65GlobalFooterAssets>
 
