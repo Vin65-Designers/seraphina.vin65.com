@@ -75,6 +75,23 @@
 	}
 }
 
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'], select {
+	border-color: #D0D3D4;
+	border-radius: 3px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: $fontFamily;
+	margin-bottom: 3px;
+	width: 100%;
+
+  	@media screen and (min-width: 581px) {
+  		height: 2.5em;
+  		line-height: 2.5;
+  		font-size: 1.1em;
+  		text-align: left !important;
+  	}
+}
+
 #v65-LoginFormWrapper, #v65-forgotPasswordForm {
 	input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'], select {
 		width: 100% !important;

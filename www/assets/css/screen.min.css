@@ -832,7 +832,6 @@ header.primary {
 }
 @media screen and (min-width: 581px) {
   #v65-modalCart {
-    border-left: 1px solid #eeeeee;
     display: inline-block;
     margin-left: 15px;
     padding-left: 20px;
@@ -1224,6 +1223,24 @@ header.primary {
 }
 .v65-form select[name="BirthMonth"], .v65-form select[name="BirthDay"], .v65-form select[name="BirthYear"], #v65-memberFormWrapper select[name="BirthMonth"], #v65-memberFormWrapper select[name="BirthDay"], #v65-memberFormWrapper select[name="BirthYear"], #v65-LoginFormWrapper select[name="BirthMonth"], #v65-LoginFormWrapper select[name="BirthDay"], #v65-LoginFormWrapper select[name="BirthYear"], #v65-forgotPasswordForm select[name="BirthMonth"], #v65-forgotPasswordForm select[name="BirthDay"], #v65-forgotPasswordForm select[name="BirthYear"] {
   width: 32%;
+}
+
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'], select {
+  border-color: #D0D3D4;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Crimson Pro", serif;
+  margin-bottom: 3px;
+  width: 100%;
+}
+@media screen and (min-width: 581px) {
+  input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'], select {
+    height: 2.5em;
+    line-height: 2.5;
+    font-size: 1.1em;
+    text-align: left !important;
+  }
 }
 
 #v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select, #v65-forgotPasswordForm input[type='text'], #v65-forgotPasswordForm input[type='password'], #v65-forgotPasswordForm input[type='username'], #v65-forgotPasswordForm input[type='tel'], #v65-forgotPasswordForm input[type='email'], #v65-forgotPasswordForm textarea, #v65-forgotPasswordForm input[type='number'], #v65-forgotPasswordForm select {
@@ -1732,6 +1749,7 @@ header.primary {
 
 .v65-product-addToCart-priceWrapper {
   color: #20272c;
+  margin-bottom: 0.5em;
 }
 
 @media screen and (max-width: 580px) {
@@ -2233,7 +2251,7 @@ footer li a:hover {
   color: #494949;
 }
 footer .footerSections {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 @media screen and (min-width: 581px) {
   footer .footerSections {
@@ -2243,7 +2261,7 @@ footer .footerSections {
 footer .v65-podTitle {
   color: #20272c;
   font-family: "Hammersmith One", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-bottom: 10px;
 }
 footer .footerSection {
@@ -2266,7 +2284,8 @@ footer .footerSection {
   }
 }
 footer .footerSection .v65-socialMediaLinks a {
-  font-size: 1.5em;
+  color: #585858;
+  font-size: 1.25em;
 }
 footer .newsletterFooterSection {
   float: left;

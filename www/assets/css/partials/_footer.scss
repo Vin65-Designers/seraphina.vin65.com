@@ -41,7 +41,7 @@ footer{
 	}
 
 	.footerSections {
-		padding-top: 2em;
+		padding-top: 3em;
 
 		@media screen and (min-width: 581px) {
 			border-top: 1px solid $borderColor;
@@ -51,7 +51,7 @@ footer{
 	.v65-podTitle {
 		color: $headingFontColor;
 		font-family: $headingFontFamily;
-		font-size: 1.1em;
+		font-size: 1.3em;
 		margin-bottom: 10px;
 	}
 
@@ -73,7 +73,8 @@ footer{
 		}
 
 		.v65-socialMediaLinks a {
-			font-size: 1.5em;
+			color: #585858;
+			font-size: 1.25em;
 		}
 	}
 
