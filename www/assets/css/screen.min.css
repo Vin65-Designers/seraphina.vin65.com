@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* CSS Document */
 /* ====================================================================================================
 	Table of Content
@@ -98,6 +99,13 @@ body {
  */
 a {
   background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
 }
 
 /**
@@ -395,6 +403,7 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -498,7 +507,7 @@ table {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: #fff url(../nivo/loading.gif) no-repeat 50% 50%;
+  background: white url(../nivo/loading.gif) no-repeat 50% 50%;
 }
 
 .nivoSlider img {
@@ -650,10 +659,11 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #737373;
-  font-family: "Cardo", serif;
-  font-weight: 300;
+  background-color: white;
+  color: #585858;
+  font-family: "Crimson Pro", serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ==========================================================================
@@ -667,39 +677,43 @@ body {
   outline: 0;
 }
 
+p, p a, ul a, li, ol {
+  font-size: 18px;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  color: #20272c;
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: normal;
   margin: 0;
 }
 
 h1 {
-  font-size: 2.25em;
+  font-size: 2.5em;
   line-height: 1;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 2em;
   line-height: 1.3333333333333333;
   margin-bottom: 0.6666666666666666em;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   line-height: 1;
   margin-bottom: 1em;
 }
 
 h4 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   line-height: 1.1428571428571428;
   margin-bottom: 1.1428571428571428em;
 }
 
 h5 {
-  font-size: 1.125em;
+  font-size: 1.3em;
   line-height: 1.3333333333333333;
   margin-bottom: 1.3333333333333333em;
 }
@@ -711,8 +725,8 @@ h6 {
 }
 
 .v65-title {
-  color: #333;
-  font-family: "Montserrat", sans-serif;
+  color: #20272c;
+  font-family: "Hammersmith One", sans-serif;
   font-size: 1.5em;
   font-weight: 300;
   line-height: 1;
@@ -723,13 +737,13 @@ h6 {
   margin: 1.5em 0 1em;
 }
 .v65-product-title.v65-title a {
-  color: #333;
+  color: #20272c;
 }
 
 .v65-subtitle {
-  color: #333;
+  color: #20272c;
   font-size: 1.1em;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   font-weight: 300;
   line-height: 1;
   margin-bottom: 1em;
@@ -750,11 +764,15 @@ dd, dt, li {
 }
 
 a {
-  color: #548240;
+  color: #415936;
   text-decoration: none;
 }
 a:hover, a:focus, a:active {
-  color: #588344;
+  color: #2a3923;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 img {
@@ -768,13 +786,13 @@ form {
 }
 
 legend {
-  color: #888888;
+  color: #585858;
 }
 
 hr {
-  background-color: #888888;
+  background-color: #585858;
   border: 0;
-  color: #888888;
+  color: #585858;
   height: 1px;
 }
 
@@ -793,13 +811,13 @@ header.primary {
 }
 @media screen and (min-width: 581px) {
   header.primary {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
   }
 }
 
 @media screen and (min-width: 581px) {
   .userToolsWrapper {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
   }
 }
 @media screen and (max-width: 580px) {
@@ -808,12 +826,13 @@ header.primary {
     width: 100%;
   }
 }
+
 #v65-modalCart {
   position: static;
 }
 @media screen and (min-width: 581px) {
   #v65-modalCart {
-    border-left: 1px solid #eee;
+    border-left: 1px solid #eeeeee;
     display: inline-block;
     margin-left: 15px;
     padding-left: 20px;
@@ -826,12 +845,12 @@ header.primary {
 }
 @media screen and (max-width: 580px) {
   #user-tools {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeee;
   }
 }
 #user-tools .v65-yourAccount, #user-tools .v65-editProfile,
 #user-tools .v65-login, #user-tools .v65-logout {
-  border-color: #eee;
+  border-color: #eeeeee;
   font-size: 15px;
   width: auto;
 }
@@ -852,7 +871,7 @@ header.primary {
   }
 }
 #user-tools a {
-  color: #808080;
+  color: #585858;
 }
 #user-tools .v65-pointsBalance {
   display: inline-block;
@@ -873,7 +892,7 @@ header.primary {
 ======================================================================================================== */
 /* ----- a. Main Menu ----- */
 .mainMenu {
-  font-size: 16px;
+  font-size: 17px;
   padding-bottom: 5px;
   position: relative;
   z-index: 101;
@@ -889,7 +908,7 @@ header.primary {
     position: fixed;
     top: 60px;
     left: -100%;
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     height: 94%;
     height: -moz-calc(100% - 60px);
     height: -webkit-calc(100% - 60px);
@@ -913,8 +932,8 @@ header.primary {
   text-align: center;
 }
 .mainMenu ul ul {
-  background: #fff;
-  border: 1px solid #eee;
+  background: white;
+  border: 1px solid #eeeeee;
   display: none;
   font-size: 15px;
   left: -10px;
@@ -924,7 +943,7 @@ header.primary {
 }
 @media screen and (max-width: 580px) {
   .mainMenu ul ul {
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     border: 0;
     display: block;
     font-size: 15px;
@@ -964,7 +983,7 @@ header.primary {
   }
 }
 .mainMenu li li a {
-  color: #696969;
+  color: #585858;
   display: block;
   height: 35px;
   line-height: 35px;
@@ -981,10 +1000,10 @@ header.primary {
   }
 }
 .mainMenu li li a:hover {
-  color: #000;
+  color: black;
 }
 .mainMenu a {
-  color: #808080;
+  color: #585858;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -1008,21 +1027,21 @@ header.primary {
 }
 @media screen and (max-width: 580px) {
   .mainMenu a {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
     margin: 0;
     padding: 0 0 0 5%;
     width: 95%;
   }
 }
 .mainMenu a:hover {
-  color: #111;
+  color: #20272c;
   text-decoration: none;
 }
 .mainMenu a:hover:after {
   width: 100%;
 }
 .mainMenu .v65-pageAParent {
-  color: #111;
+  color: #20272c;
 }
 @media screen and (max-width: 919px) {
   .mainMenu .v65-home {
@@ -1030,7 +1049,7 @@ header.primary {
   }
 }
 .mainMenu .v65-selected, .mainMenu .hover {
-  color: #111;
+  color: #20272c;
 }
 .mainMenu .footerMenuLink {
   bottom: 0;
@@ -1078,7 +1097,7 @@ header.primary {
 }
 @media screen and (max-width: 767px) {
   .subMenu li {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
     line-height: 44px;
     text-align: center;
   }
@@ -1087,23 +1106,23 @@ header.primary {
   margin-left: 10px;
 }
 .subMenu a {
-  color: #808080;
+  color: #585858;
   display: inline-block;
   line-height: 1.5;
   width: 100%;
 }
 .subMenu a:hover, .subMenu a:active, .subMenu a:focus {
-  color: #111;
+  color: #20272c;
 }
 .subMenu .v65-pageAParent {
-  color: #111;
+  color: #20272c;
 }
 .subMenu .v65-leftSelected {
-  color: #111;
+  color: #20272c;
 }
 
 .mobileMenu {
-  color: #808080;
+  color: #585858;
   display: none;
   float: left;
   font-size: 2.5em;
@@ -1138,7 +1157,7 @@ header.primary {
      4. Content
 ======================================================================================================== */
 #v65-modalContentHeader {
-  background: #333;
+  background: #20272c;
 }
 
 @media screen and (max-width: 800px) {
@@ -1159,37 +1178,70 @@ header.primary {
   width: 94%;
 }
 
-input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
-  background: #f8f8f8;
-  border-color: #e4e4e4;
+.v65-form fieldset, #v65-memberFormWrapper fieldset, #v65-LoginFormWrapper fieldset, #v65-forgotPasswordForm fieldset {
+  border: none;
+}
+.v65-form legend, #v65-memberFormWrapper legend, #v65-LoginFormWrapper legend, #v65-forgotPasswordForm legend {
+  color: #20272c;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+.v65-form label, #v65-memberFormWrapper label, #v65-LoginFormWrapper label, #v65-forgotPasswordForm label {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.v65-form input[type='text'], .v65-form input[type='password'], .v65-form input[type='username'], .v65-form input[type='tel'], .v65-form input[type='email'], .v65-form textarea, .v65-form input[type='number'], .v65-form select, #v65-memberFormWrapper input[type='text'], #v65-memberFormWrapper input[type='password'], #v65-memberFormWrapper input[type='username'], #v65-memberFormWrapper input[type='tel'], #v65-memberFormWrapper input[type='email'], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type='number'], #v65-memberFormWrapper select, #v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select, #v65-forgotPasswordForm input[type='text'], #v65-forgotPasswordForm input[type='password'], #v65-forgotPasswordForm input[type='username'], #v65-forgotPasswordForm input[type='tel'], #v65-forgotPasswordForm input[type='email'], #v65-forgotPasswordForm textarea, #v65-forgotPasswordForm input[type='number'], #v65-forgotPasswordForm select {
+  border-color: #D0D3D4;
   border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Crimson Pro", serif;
+  margin-bottom: 3px;
+  width: 100%;
 }
 @media screen and (min-width: 581px) {
-  input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'] {
-    height: 2.9em;
-    line-height: 2.9em;
+  .v65-form input[type='text'], .v65-form input[type='password'], .v65-form input[type='username'], .v65-form input[type='tel'], .v65-form input[type='email'], .v65-form textarea, .v65-form input[type='number'], .v65-form select, #v65-memberFormWrapper input[type='text'], #v65-memberFormWrapper input[type='password'], #v65-memberFormWrapper input[type='username'], #v65-memberFormWrapper input[type='tel'], #v65-memberFormWrapper input[type='email'], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type='number'], #v65-memberFormWrapper select, #v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select, #v65-forgotPasswordForm input[type='text'], #v65-forgotPasswordForm input[type='password'], #v65-forgotPasswordForm input[type='username'], #v65-forgotPasswordForm input[type='tel'], #v65-forgotPasswordForm input[type='email'], #v65-forgotPasswordForm textarea, #v65-forgotPasswordForm input[type='number'], #v65-forgotPasswordForm select {
+    height: 2.5em;
+    line-height: 2.5;
+    font-size: 1.1em;
+    text-align: left !important;
   }
 }
-
-input[type='number'] {
-  border: 1px solid #e4e4e4;
+.v65-form input[type="checkbox"], #v65-memberFormWrapper input[type="checkbox"], #v65-LoginFormWrapper input[type="checkbox"], #v65-forgotPasswordForm input[type="checkbox"] {
+  margin: 0.3em;
+}
+.v65-form input[type='number'], #v65-memberFormWrapper input[type='number'], #v65-LoginFormWrapper input[type='number'], #v65-forgotPasswordForm input[type='number'] {
+  border: 1px solid #D0D3D4;
   padding: 0 0.5em;
 }
 @media screen and (max-width: 580px) {
-  input[type='number'] {
+  .v65-form input[type='number'], #v65-memberFormWrapper input[type='number'], #v65-LoginFormWrapper input[type='number'], #v65-forgotPasswordForm input[type='number'] {
     height: 4em;
     line-height: 4em;
     min-width: 3em;
   }
 }
+.v65-form select[name="BirthMonth"], .v65-form select[name="BirthDay"], .v65-form select[name="BirthYear"], #v65-memberFormWrapper select[name="BirthMonth"], #v65-memberFormWrapper select[name="BirthDay"], #v65-memberFormWrapper select[name="BirthYear"], #v65-LoginFormWrapper select[name="BirthMonth"], #v65-LoginFormWrapper select[name="BirthDay"], #v65-LoginFormWrapper select[name="BirthYear"], #v65-forgotPasswordForm select[name="BirthMonth"], #v65-forgotPasswordForm select[name="BirthDay"], #v65-forgotPasswordForm select[name="BirthYear"] {
+  width: 32%;
+}
+
+#v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select, #v65-forgotPasswordForm input[type='text'], #v65-forgotPasswordForm input[type='password'], #v65-forgotPasswordForm input[type='username'], #v65-forgotPasswordForm input[type='tel'], #v65-forgotPasswordForm input[type='email'], #v65-forgotPasswordForm textarea, #v65-forgotPasswordForm input[type='number'], #v65-forgotPasswordForm select {
+  width: 100% !important;
+}
 
 /* ----- a. Homepage Styles ----- */
 .homepageContentBlocks {
-  margin: 2em 0 8em;
+  margin: 4em 0 6em;
+}
+@media screen and (max-width: 580px) {
+  .homepageContentBlocks {
+    margin-top: 0;
+  }
 }
 
 .homepageContentBlock {
-  background-color: #EFEFEF;
+  background-color: #f7f7f7;
   min-height: 350px;
   position: relative;
   text-align: center;
@@ -1197,14 +1249,13 @@ input[type='number'] {
 @media screen and (max-width: 800px) {
   .homepageContentBlock {
     float: left;
-    margin-top: 5em;
   }
   .homepageContentBlock:first-child {
     margin-top: 0;
   }
 }
 .homepageContentBlock h3 {
-  color: #333;
+  color: #20272c;
 }
 .homepageContentBlock p {
   margin-bottom: 5px;
@@ -1226,7 +1277,7 @@ input[type='number'] {
     width: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 13px solid #EFEFEF;
+    border-left: 13px solid #f7f7f7;
     margin-top: -15px;
     position: absolute;
     right: -13px;
@@ -1249,7 +1300,7 @@ input[type='number'] {
     width: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 13px solid #EFEFEF;
+    border-right: 13px solid #f7f7f7;
     margin-top: -15px;
     position: absolute;
     left: -13px;
@@ -1282,20 +1333,17 @@ input[type='number'] {
   }
 }
 .homepageContentBlock a.homepageButton {
-  background-color: #8AB875;
+  background-color: #587949;
   border-radius: 3px;
-  box-shadow: 0px 2px 0px #588344;
   color: #fff;
   display: inline-block;
   font-weight: normal;
-  font-size: 0.8em;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
+  font-size: 1em;
+  font-family: "Hammersmith One", sans-serif;
   padding: 16px 3em;
-  text-transform: uppercase;
 }
 .homepageContentBlock a.homepageButton:hover, .homepageContentBlock a.homepageButton:active, .homepageContentBlock a.homepageButton:focus {
-  background-color: #548240;
+  background-color: #415936;
 }
 
 .homepageProductGroup .v65-productGroup-title.v65-title,
@@ -1331,9 +1379,9 @@ input[type='number'] {
 
 /* ----- b. Page Styles ----- */
 .backToTop {
-  background: #333;
+  background: #20272c;
   bottom: 1em;
-  color: #fff;
+  color: white;
   border-radius: 50%;
   display: none;
   height: 5em;
@@ -1490,32 +1538,32 @@ input[type='number'] {
 #v65-CalendarTable {
   background-color: transparent;
   border: 0;
-  color: #eee;
+  color: #eeeeee;
 }
 #v65-CalendarTable th {
   background-color: transparent;
   border: 0;
-  color: #888888;
-  font-family: "Montserrat", sans-serif;
+  color: #585858;
+  font-family: "Hammersmith One", sans-serif;
   padding: 5px 0;
 }
 #v65-CalendarTable td {
   background-color: #f4f4f4;
-  border-bottom: 3px solid #fff;
-  border-left: 3px solid #fff;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white;
   height: 80px;
 }
 #v65-CalendarTable .v65-CalendarDay {
   border: 0;
-  color: #588344;
-  font-family: "Montserrat", sans-serif;
+  color: #2a3923;
+  font-family: "Hammersmith One", sans-serif;
   font-size: 0.95em;
 }
 #v65-CalendarTable .v65-CalendarOffMonthDays {
-  background-color: #EFEFEF;
+  background-color: #f7f7f7;
 }
 #v65-CalendarTable .v65-CalendarToDay {
-  background-color: #EFEFEF;
+  background-color: #f7f7f7;
 }
 @media screen and (max-width: 580px) {
   #v65-CalendarTable .v65-CalendarEvent {
@@ -1525,7 +1573,7 @@ input[type='number'] {
 @media screen and (max-width: 580px) {
   #v65-CalendarTable .v65-CalendarEvent a {
     background-color: transparent;
-    color: #548240;
+    color: #415936;
     height: 2.3em;
     width: auto;
   }
@@ -1665,25 +1713,25 @@ input[type='number'] {
 
 .v65-productList table th {
   background-color: transparent;
-  color: #888888;
+  color: #585858;
   font-weight: normal;
 }
 .v65-productList table tr:hover, .v65-productList table tr:focus, .v65-productList table tr:active, .v65-productList table tr.alternatRow:hover, .v65-productList table tr.alternatRow:focus, .v65-productList table tr.alternatRow:active {
-  background-color: #EFEFEF;
+  background-color: #f7f7f7;
 }
 .v65-productList table tr.alternatRow {
-  background-color: #f7f7f7;
+  background-color: white;
 }
 
 .v65-product1UpStore {
-  border-color: #eee;
+  border-color: #eeeeee;
 }
 .v65-product1UpStore .v65-product-title.v65-title {
   margin-top: 0;
 }
 
 .v65-product-addToCart-priceWrapper {
-  color: #333;
+  color: #20272c;
 }
 
 @media screen and (max-width: 580px) {
@@ -1717,8 +1765,8 @@ input[type='number'] {
 }
 
 .wineDetails {
-  border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
   margin: 4em 0;
   padding: 3em 0 1em;
 }
@@ -1781,7 +1829,7 @@ input[type='number'] {
 }
 
 .v65-product-review-wrapper {
-  border-color: #eee;
+  border-color: #eeeeee;
 }
 
 .v65-club {
@@ -1817,7 +1865,7 @@ input[type='number'] {
 
 #v65-modalCartTable th, #v65-modalCartTable td {
   background-color: transparent;
-  border-color: #eee;
+  border-color: #eeeeee;
   font-weight: 100;
 }
 #v65-modalCartTable strong {
@@ -1836,7 +1884,7 @@ input[type='number'] {
 
 #v65-cartTable th, #v65-cartTable td {
   background-color: transparent;
-  border-color: #eee;
+  border-color: #eeeeee;
   font-weight: normal;
 }
 @media screen and (max-width: 370px) {
@@ -1881,29 +1929,29 @@ input[type='number'] {
 
 #v65-signUpClubSummaryWrapper,
 #v65-checkoutCartSummaryWrapper {
-  background-color: #F9F9F9;
-  border-color: #eee;
+  background-color: #f9f9f9;
+  border-color: #eeeeee;
 }
 
 .v65-form fieldset {
-  border-color: #eee;
+  border-color: #eeeeee;
 }
 
 #v65-modalCartDropdown,
 #v65-modalCartBody {
-  background-color: #F9F9F9;
-  border-color: #eee;
-  color: #888888;
+  background-color: #f9f9f9;
+  border-color: #eeeeee;
+  color: #585858;
 }
 #v65-modalCartDropdown a,
 #v65-modalCartBody a {
-  color: #888888;
+  color: #585858;
 }
 #v65-modalCartDropdown #v65-modalCartTable td a,
 #v65-modalCartDropdown .v65-additionalItemsMessage a,
 #v65-modalCartBody #v65-modalCartTable td a,
 #v65-modalCartBody .v65-additionalItemsMessage a {
-  color: #888888;
+  color: #585858;
 }
 #v65-modalCartDropdown #v65-modalCartTable td a:hover, #v65-modalCartDropdown #v65-modalCartTable td a:focus, #v65-modalCartDropdown #v65-modalCartTable td a:active,
 #v65-modalCartDropdown .v65-additionalItemsMessage a:hover,
@@ -1915,7 +1963,7 @@ input[type='number'] {
 #v65-modalCartBody .v65-additionalItemsMessage a:hover,
 #v65-modalCartBody .v65-additionalItemsMessage a:focus,
 #v65-modalCartBody .v65-additionalItemsMessage a:active {
-  color: #747474;
+  color: #444444;
 }
 
 #v65-cartCheckOutCoupons form {
@@ -1923,8 +1971,8 @@ input[type='number'] {
 }
 
 #v65-pointsGainedOnOrder {
-  border-bottom: 1px solid #eee;
-  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
   font-size: 1em;
   padding: 0.5em 0;
   margin: 0.5em 0 1em;
@@ -1988,7 +2036,7 @@ input[type='number'] {
 .v65-blogFooterDate,
 .v65-blogFooterComments,
 .v65-blogFooterLink {
-  color: #333;
+  color: #20272c;
 }
 .v65-blogFooterDate img,
 .v65-blogFooterComments img,
@@ -2026,11 +2074,9 @@ input[type='number'] {
      6. Buttons
 ======================================================================================================== */
 button span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Hammersmith One", sans-serif;
   font-weight: normal;
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 1em;
 }
 @media screen and (max-width: 580px) {
   button span {
@@ -2049,12 +2095,11 @@ button span {
   }
 }
 button.defaultBtn, button.modalBtn, button.largeBtn {
-  background: #8AB875;
+  background: #587949;
   border-radius: 3px;
-  box-shadow: 0px 2px 0px #588344;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   background: none;
@@ -2062,19 +2107,18 @@ button.defaultBtn span, button.modalBtn span, button.largeBtn span {
   line-height: inherit;
 }
 button.defaultBtn:hover, button.defaultBtn:active, button.modalBtn:hover, button.modalBtn:active, button.largeBtn:hover, button.largeBtn:active {
-  background: #548240;
+  background: #415936;
 }
 button.modalBtn, button.altModalBtn {
   height: 2.5em;
   line-height: inherit;
 }
 button.altBtn, button.altModalBtn, button.altLargeBtn {
-  background: #eee;
-  box-shadow: 0px 2px 0px #bbbbbb;
+  background: #eeeeee;
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 button.altBtn span, button.altModalBtn span, button.altLargeBtn span {
   background: none;
@@ -2088,19 +2132,16 @@ button.altBtn:hover, button.altBtn:active, button.altModalBtn:hover, button.altM
 
 a span {
   height: auto;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.8em;
-  letter-spacing: 1px;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1em;
   line-height: inherit;
-  text-transform: uppercase;
 }
 a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
-  background: #8AB875;
+  background: #587949;
   border-radius: 3px;
-  box-shadow: 0px 1.5px 0px #588344;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   background: none;
@@ -2108,7 +2149,7 @@ a.linkBtn span, a.modalLinkBtn span, a.largeLinkBtn span {
   line-height: inherit;
 }
 a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, a.largeLinkBtn:hover, a.largeLinkBtn:active {
-  background: #548240;
+  background: #415936;
 }
 @media screen and (max-width: 580px) {
   a.linkBtn {
@@ -2121,12 +2162,11 @@ a.linkBtn:hover, a.linkBtn:active, a.modalLinkBtn:hover, a.modalLinkBtn:active, 
   }
 }
 a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
-  background: #eee;
+  background: #eeeeee;
   border-radius: 3px;
-  box-shadow: 0px 1.5px 0px #bbbbbb;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 a.linkAltBtn span, a.modalLinkAltBtn span, a.modalLinkAltBtn span {
   background: none;
@@ -2151,7 +2191,7 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
      7. Footer
 ======================================================================================================== */
 footer {
-  color: #737373;
+  color: #6f6f6f;
   font-size: 0.9em;
   padding: 5em 0 1.5em;
   width: 100%;
@@ -2181,7 +2221,7 @@ footer li {
   }
 }
 footer li a {
-  color: #737373;
+  color: #6f6f6f;
   position: relative;
 }
 @media screen and (max-width: 580px) {
@@ -2190,18 +2230,20 @@ footer li a {
   }
 }
 footer li a:hover {
-  color: #5d5d5d;
+  color: #494949;
 }
 footer .footerSections {
   padding-top: 2em;
 }
 @media screen and (min-width: 581px) {
   footer .footerSections {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
   }
 }
 footer .v65-podTitle {
-  font-family: "Montserrat", sans-serif;
+  color: #20272c;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.1em;
   margin-bottom: 10px;
 }
 footer .footerSection {
@@ -2217,11 +2259,14 @@ footer .footerSection {
 }
 @media screen and (max-width: 580px) {
   footer .footerSection {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
     margin: 1.5em 2%;
     padding-top: 1.5em;
     width: 96%;
   }
+}
+footer .footerSection .v65-socialMediaLinks a {
+  font-size: 1.5em;
 }
 footer .newsletterFooterSection {
   float: left;
@@ -2236,11 +2281,14 @@ footer .newsletterFooterSection {
 }
 @media screen and (max-width: 580px) {
   footer .newsletterFooterSection {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
     margin: 1.5em 2%;
     padding-top: 1.5em;
     width: 96%;
   }
+}
+footer .newsletterFooterSection #v65-subscribeWidget input {
+  width: 150px;
 }
 footer .footerTools {
   float: left;
@@ -2248,17 +2296,18 @@ footer .footerTools {
   width: 100%;
 }
 footer .legal {
-  color: #a4a4a4;
-  font-size: 0.917em;
+  color: #6f6f6f;
   text-align: center;
 }
 footer .legal li {
   border: 0;
   display: block;
+  font-size: 1em;
 }
 footer .legal a {
-  color: #a4a4a4;
+  color: #6f6f6f;
+  font-size: 1em;
 }
 footer a {
-  color: #737373;
+  color: #6f6f6f;
 }

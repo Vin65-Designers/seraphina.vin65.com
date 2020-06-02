@@ -1,41 +1,76 @@
 // Global Fonts
-$montserrat: 'Montserrat', sans-serif;
-$cardo: 'Cardo', serif;
+$crimson: 'Crimson Pro', serif;
+$hammersmith: 'Hammersmith One', sans-serif;
 
 // Global Variables
-$fontFamily: $cardo;
-$headingFontFamily: $montserrat;
-$buttonFont: $montserrat;
+$fontFamily: $crimson;
+$headingFontFamily: $hammersmith;
+$buttonFont: $hammersmith;
 
 // Colors
-$grey: #696969;
+$grey: #585858;
 $lightGrey: #eee;
-$darkGrey: #333;
+$darkGrey: #20272C;
+
 $black: #000;
 $white: #fff;
 $offWhite: #f3f4f4;
-$offBlack: #111;
 
-$green: #8AB875;
-$yellow: #e1b94a;
-$blue: #2C6680;
-
-
-// =================================== // 
-// Themes //
-// =================================== //
-
-
-@import 'themes/themeSettings_white';
-// @import 'themes/themeSettings_beige';
-// @import 'themes/themeSettings_dark';
-
-
-
+$green: #587949;
 
 // ============================== // 
-// Global Variables //
+// Theme //
 // ============================== // 
+
+// General
+$backgroundColor: $white;
+$altBackgroundColor: #f7f7f7; 
+$borderColor: $lightGrey; 
+$fontColor: $grey;
+$primaryColor: $green;
+
+$linkColor: darken($primaryColor, 10%);
+
+$headingFontColor: $darkGrey;
+$headerFontColor: $darkGrey;
+$productTitleColor: $darkGrey;
+$contentBlockTitleColor: $darkGrey;
+
+// Buttons
+$mainButtonColor: $primaryColor;
+$mainButtonHover: darken($mainButtonColor, 10%);
+
+$altButtonColor: $lightGrey;
+$altButtonHover: darken($lightGrey, 10%);
+
+// Back to Top Colors
+$backToTop: $darkGrey; // Back to top button color
+$backToTopFont: $white; // Back to top button font color
+
+// Navigation Colors
+$navLinkColor: $grey;
+$navLinkHover: $darkGrey;
+$navSelected: $darkGrey;
+$leftNavSelected: $darkGrey;
+$subNavLinkColor: $grey;
+$subNavLinkHover: $black;
+$subNavBackgroundColor: $backgroundColor;
+
+$userToolsLinkColor: $navLinkColor;
+
+// Logo Settings
+$logo: 'logo.png';
+$logo-retina: 'logo@2x.png';
+
+// Footer Colors
+$footerColor: #6f6f6f;
+$footerLink: #6f6f6f;
+$footerLinkHover: darken(#6f6f6f, 15%);
+$legalFooterColor: #6f6f6f;
+
+
+$calendarDayColor: #f4f4f4;
+$modalCartColor: #F9F9F9;
 
 @mixin gradient($color1, $color2){
 	background-color: $color1;
@@ -62,39 +97,3 @@ $blue: #2C6680;
 		height:100%;
 	}
 }
-
-$linkColor: darken($primaryColor, 10%);
-
-// Buttons
-$mainButtonColor: $primaryColor;
-$mainButtonHover: darken($mainButtonColor, 10%);
-
-$altButtonColor: $lightGrey;
-$altButtonHover: darken($lightGrey, 10%);
-
-
-// Form Colors
-$quanityForm: $lightGrey; // Add to cart quanity input form field background color.
-$quanityFormFont: $black; // Add to cart quanity input form field font color.
-
-// Back to Top Colors
-$backToTop: $darkGrey; // Back to top button color
-$backToTopFont: $white; // Back to top button font color
-
-
-// Button Colors
-// @mixin mainButtonColor() {
-// 	@include gradient($blue-light, $blue-dark); // Main Button Color
-// } 
-
-// @mixin mainButtonHover() {
-// 	@include gradient(lighten($blue-light, 5%), lighten($blue-dark, 5%));
-// } 
-
-// @mixin altButtonColor() {
-// 	@include gradient($lightGrey, $darkGrey); // Main Button Color
-// } 
-
-// @mixin altButtonHover() {
-// 	@include gradient(lighten($lightGrey, 5%), lighten($darkGrey, 5%));
-// } 

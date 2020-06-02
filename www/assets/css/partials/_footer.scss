@@ -49,7 +49,9 @@ footer{
 	}
 
 	.v65-podTitle {
+		color: $headingFontColor;
 		font-family: $headingFontFamily;
+		font-size: 1.1em;
 		margin-bottom: 10px;
 	}
 
@@ -69,6 +71,10 @@ footer{
 			padding-top: 1.5em;
 			width: 96%;
 		}
+
+		.v65-socialMediaLinks a {
+			font-size: 1.5em;
+		}
 	}
 
 	.newsletterFooterSection {
@@ -87,6 +93,10 @@ footer{
 			padding-top: 1.5em;
 			width: 96%;
 		}
+
+		#v65-subscribeWidget input {
+			width: 150px;
+		}
 	}
 
 	.footerTools {
@@ -97,16 +107,17 @@ footer{
 	
 	.legal{
 		color: $legalFooterColor;
-		font-size: 0.917em;
 		text-align: center;
 
 		li{
 			border: 0;
 			display: block;
+			font-size: 1em;
 		}
 
 		a {
 			color: $legalFooterColor;
+			font-size: 1em;
 		}
 	}
 
