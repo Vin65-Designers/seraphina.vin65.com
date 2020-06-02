@@ -724,7 +724,7 @@ h6 {
   margin-bottom: 1.5em;
 }
 
-.v65-title {
+.v65-title, .v65-title a {
   color: #20272c;
   font-family: "Hammersmith One", sans-serif;
   font-size: 1.5em;
@@ -734,7 +734,8 @@ h6 {
 }
 
 .v65-product-title.v65-title {
-  margin: 1.5em 0 1em;
+  font-size: 1em;
+  margin: 1em 0 0.75em;
 }
 .v65-product-title.v65-title a {
   color: #20272c;
@@ -1177,20 +1178,20 @@ header.primary {
   width: 94%;
 }
 
-.v65-form fieldset, #v65-memberFormWrapper fieldset, #v65-LoginFormWrapper fieldset, #v65-forgotPasswordForm fieldset {
+.v65-form fieldset, #v65-memberFormWrapper fieldset, #v65-LoginFormWrapper fieldset {
   border: none;
 }
-.v65-form legend, #v65-memberFormWrapper legend, #v65-LoginFormWrapper legend, #v65-forgotPasswordForm legend {
+.v65-form legend, #v65-memberFormWrapper legend, #v65-LoginFormWrapper legend {
   color: #20272c;
   font-family: "Hammersmith One", sans-serif;
   font-size: 1.3em;
   margin-bottom: 1em;
 }
-.v65-form label, #v65-memberFormWrapper label, #v65-LoginFormWrapper label, #v65-forgotPasswordForm label {
+.v65-form label, #v65-memberFormWrapper label, #v65-LoginFormWrapper label {
   font-size: 17px;
   margin-bottom: 5px;
 }
-.v65-form input[type='text'], .v65-form input[type='password'], .v65-form input[type='username'], .v65-form input[type='tel'], .v65-form input[type='email'], .v65-form textarea, .v65-form input[type='number'], .v65-form select, #v65-memberFormWrapper input[type='text'], #v65-memberFormWrapper input[type='password'], #v65-memberFormWrapper input[type='username'], #v65-memberFormWrapper input[type='tel'], #v65-memberFormWrapper input[type='email'], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type='number'], #v65-memberFormWrapper select, #v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select, #v65-forgotPasswordForm input[type='text'], #v65-forgotPasswordForm input[type='password'], #v65-forgotPasswordForm input[type='username'], #v65-forgotPasswordForm input[type='tel'], #v65-forgotPasswordForm input[type='email'], #v65-forgotPasswordForm textarea, #v65-forgotPasswordForm input[type='number'], #v65-forgotPasswordForm select {
+.v65-form input[type='text'], .v65-form input[type='password'], .v65-form input[type='username'], .v65-form input[type='tel'], .v65-form input[type='email'], .v65-form textarea, .v65-form input[type='number'], .v65-form select, #v65-memberFormWrapper input[type='text'], #v65-memberFormWrapper input[type='password'], #v65-memberFormWrapper input[type='username'], #v65-memberFormWrapper input[type='tel'], #v65-memberFormWrapper input[type='email'], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type='number'], #v65-memberFormWrapper select, #v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select {
   border-color: #D0D3D4;
   border-radius: 3px;
   box-sizing: border-box;
@@ -1200,28 +1201,28 @@ header.primary {
   width: 100%;
 }
 @media screen and (min-width: 581px) {
-  .v65-form input[type='text'], .v65-form input[type='password'], .v65-form input[type='username'], .v65-form input[type='tel'], .v65-form input[type='email'], .v65-form textarea, .v65-form input[type='number'], .v65-form select, #v65-memberFormWrapper input[type='text'], #v65-memberFormWrapper input[type='password'], #v65-memberFormWrapper input[type='username'], #v65-memberFormWrapper input[type='tel'], #v65-memberFormWrapper input[type='email'], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type='number'], #v65-memberFormWrapper select, #v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select, #v65-forgotPasswordForm input[type='text'], #v65-forgotPasswordForm input[type='password'], #v65-forgotPasswordForm input[type='username'], #v65-forgotPasswordForm input[type='tel'], #v65-forgotPasswordForm input[type='email'], #v65-forgotPasswordForm textarea, #v65-forgotPasswordForm input[type='number'], #v65-forgotPasswordForm select {
+  .v65-form input[type='text'], .v65-form input[type='password'], .v65-form input[type='username'], .v65-form input[type='tel'], .v65-form input[type='email'], .v65-form textarea, .v65-form input[type='number'], .v65-form select, #v65-memberFormWrapper input[type='text'], #v65-memberFormWrapper input[type='password'], #v65-memberFormWrapper input[type='username'], #v65-memberFormWrapper input[type='tel'], #v65-memberFormWrapper input[type='email'], #v65-memberFormWrapper textarea, #v65-memberFormWrapper input[type='number'], #v65-memberFormWrapper select, #v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select {
     height: 2.5em;
     line-height: 2.5;
     font-size: 1.1em;
     text-align: left !important;
   }
 }
-.v65-form input[type="checkbox"], #v65-memberFormWrapper input[type="checkbox"], #v65-LoginFormWrapper input[type="checkbox"], #v65-forgotPasswordForm input[type="checkbox"] {
+.v65-form input[type="checkbox"], #v65-memberFormWrapper input[type="checkbox"], #v65-LoginFormWrapper input[type="checkbox"] {
   margin: 0.3em;
 }
-.v65-form input[type='number'], #v65-memberFormWrapper input[type='number'], #v65-LoginFormWrapper input[type='number'], #v65-forgotPasswordForm input[type='number'] {
+.v65-form input[type='number'], #v65-memberFormWrapper input[type='number'], #v65-LoginFormWrapper input[type='number'] {
   border: 1px solid #D0D3D4;
   padding: 0 0.5em;
 }
 @media screen and (max-width: 580px) {
-  .v65-form input[type='number'], #v65-memberFormWrapper input[type='number'], #v65-LoginFormWrapper input[type='number'], #v65-forgotPasswordForm input[type='number'] {
+  .v65-form input[type='number'], #v65-memberFormWrapper input[type='number'], #v65-LoginFormWrapper input[type='number'] {
     height: 4em;
     line-height: 4em;
     min-width: 3em;
   }
 }
-.v65-form select[name="BirthMonth"], .v65-form select[name="BirthDay"], .v65-form select[name="BirthYear"], #v65-memberFormWrapper select[name="BirthMonth"], #v65-memberFormWrapper select[name="BirthDay"], #v65-memberFormWrapper select[name="BirthYear"], #v65-LoginFormWrapper select[name="BirthMonth"], #v65-LoginFormWrapper select[name="BirthDay"], #v65-LoginFormWrapper select[name="BirthYear"], #v65-forgotPasswordForm select[name="BirthMonth"], #v65-forgotPasswordForm select[name="BirthDay"], #v65-forgotPasswordForm select[name="BirthYear"] {
+.v65-form select[name="BirthMonth"], .v65-form select[name="BirthDay"], .v65-form select[name="BirthYear"], #v65-memberFormWrapper select[name="BirthMonth"], #v65-memberFormWrapper select[name="BirthDay"], #v65-memberFormWrapper select[name="BirthYear"], #v65-LoginFormWrapper select[name="BirthMonth"], #v65-LoginFormWrapper select[name="BirthDay"], #v65-LoginFormWrapper select[name="BirthYear"] {
   width: 32%;
 }
 
@@ -1243,18 +1244,13 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
   }
 }
 
-#v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select, #v65-forgotPasswordForm input[type='text'], #v65-forgotPasswordForm input[type='password'], #v65-forgotPasswordForm input[type='username'], #v65-forgotPasswordForm input[type='tel'], #v65-forgotPasswordForm input[type='email'], #v65-forgotPasswordForm textarea, #v65-forgotPasswordForm input[type='number'], #v65-forgotPasswordForm select {
+#v65-LoginFormWrapper input[type='text'], #v65-LoginFormWrapper input[type='password'], #v65-LoginFormWrapper input[type='username'], #v65-LoginFormWrapper input[type='tel'], #v65-LoginFormWrapper input[type='email'], #v65-LoginFormWrapper textarea, #v65-LoginFormWrapper input[type='number'], #v65-LoginFormWrapper select, #v65-forgotPasswordForm input[type='text'], #v65-forgotPasswordForm input[type='password'], #v65-forgotPasswordForm input[type='username'], #v65-forgotPasswordForm input[type='tel'], #v65-forgotPasswordForm input[type='email'], #v65-forgotPasswordForm textarea, #v65-forgotPasswordForm input[type='number'], #v65-forgotPasswordForm select, #v65-loginForm input[type='text'], #v65-loginForm input[type='password'], #v65-loginForm input[type='username'], #v65-loginForm input[type='tel'], #v65-loginForm input[type='email'], #v65-loginForm textarea, #v65-loginForm input[type='number'], #v65-loginForm select {
   width: 100% !important;
 }
 
 /* ----- a. Homepage Styles ----- */
 .homepageContentBlocks {
-  margin: 4em 0 6em;
-}
-@media screen and (max-width: 580px) {
-  .homepageContentBlocks {
-    margin-top: 0;
-  }
+  margin: 0 0 4em;
 }
 
 .homepageContentBlock {
@@ -1363,6 +1359,9 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
   background-color: #415936;
 }
 
+.homepageProductGroup .v65-productGroup {
+  margin-bottom: 0;
+}
 .homepageProductGroup .v65-productGroup-title.v65-title,
 .homepageProductGroup .v65-productGroup-teaser {
   display: none;
@@ -1856,12 +1855,15 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
 @media screen and (min-width: 1020px) {
   .v65-club {
     float: left;
-    margin: 3em 2%;
     width: 46%;
+  }
+  .v65-club:nth-of-type(2n+1) {
+    margin-right: 8%;
   }
 }
 .v65-club .v65-title {
   margin-bottom: 1em;
+  font-size: 1.25em;
 }
 .v65-club .v65-clubTeaser {
   border-bottom: 0;
@@ -2211,7 +2213,7 @@ a.modalLinkBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
 footer {
   color: #6f6f6f;
   font-size: 0.9em;
-  padding: 5em 0 1.5em;
+  margin: 7em 0 2em;
   width: 100%;
 }
 @media screen and (max-width: 580px) {
@@ -2284,7 +2286,7 @@ footer .footerSection {
   }
 }
 footer .footerSection .v65-socialMediaLinks a {
-  color: #585858;
+  color: #587949;
   font-size: 1.25em;
 }
 footer .newsletterFooterSection {
@@ -2311,7 +2313,7 @@ footer .newsletterFooterSection #v65-subscribeWidget input {
 }
 footer .footerTools {
   float: left;
-  margin-top: 2em;
+  margin-top: 4em;
   width: 100%;
 }
 footer .legal {

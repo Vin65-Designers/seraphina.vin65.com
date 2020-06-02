@@ -1,9 +1,5 @@
 .homepageContentBlocks {
-	margin: 4em 0 6em;
-
-	@media screen and (max-width: 580px) {
-		margin-top: 0;
-	}
+	margin: 0 0 4em;
 }
 
 .homepageContentBlock {
@@ -125,7 +121,10 @@
 }
 
 .homepageProductGroup {
-
+	.v65-productGroup {
+		margin-bottom: 0;
+	}
+	
 	.v65-productGroup-title.v65-title,
 	.v65-productGroup-teaser {
 		display: none;

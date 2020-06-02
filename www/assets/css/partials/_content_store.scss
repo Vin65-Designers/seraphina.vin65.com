@@ -277,12 +277,16 @@
 
 	@media screen and (min-width: 1020px){
 		float: left;
-		margin: 3em 2%;
 		width: 46%;
+
+		&:nth-of-type(2n+1){
+			margin-right: 8%
+		}
 	}
 
 	.v65-title {
 		margin-bottom: 1em;
+		font-size: 1.25em;
 	}
 
 	.v65-clubTeaser {

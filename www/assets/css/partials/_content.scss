@@ -20,7 +20,7 @@
 	width: 94%;
 }
 
-.v65-form, #v65-memberFormWrapper, #v65-LoginFormWrapper, #v65-forgotPasswordForm {
+.v65-form, #v65-memberFormWrapper, #v65-LoginFormWrapper {
 	fieldset {
 		border: none;
 	}
@@ -44,7 +44,6 @@
 		-webkit-box-sizing: border-box;
 		font-family: $fontFamily;
 		margin-bottom: 3px;
-		
 		width: 100%;
 
 	  	@media screen and (min-width: 581px) {
@@ -92,7 +91,7 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
   	}
 }
 
-#v65-LoginFormWrapper, #v65-forgotPasswordForm {
+#v65-LoginFormWrapper, #v65-forgotPasswordForm, #v65-loginForm {
 	input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], textarea, input[type='number'], select {
 		width: 100% !important;
 	}
