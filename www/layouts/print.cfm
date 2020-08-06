@@ -11,8 +11,7 @@
 	
 	<cf_vin65GlobalAssets>
 
-	<link href='//fonts.googleapis.com/css?family=Fira+Sans:300,400,700,400italic' rel='stylesheet' type='text/css'>
-	<cf_css files="/assets/css/screen.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400;1,600&family=Hammersmith+One&display=swap" rel="stylesheet">
 
 	<!--[if lt IE 9]><script src="/assets/js/respond.min.js"></script><![endif]-->
 

@@ -3,9 +3,9 @@
 	
 	<div id="v65-modalViel">&nbsp;</div>
 	
-	<div id="v65-modalContentWrapper">
+	<div id="v65-modalContentWrapper" role="dialog" aria-modal="true" aria-label="Subscribe">
 		
-		<div id="v65-modalContentHeader"><a href="javascript:vin65.modal.closeWindow()" class="modalLinkBtn" aria-label="Close"><span>Close</span></a></div>
+		<div id="v65-modalContentHeader"><a href="javascript:vin65.modal.closeWindow()" class="modalLinkBtn"><span>Close</span></a></div>
 		
 		<div id="v65-modalContent">
 			<img src="#request.assetPath#/images/loading.gif">
